@@ -4,7 +4,16 @@
   <artifactId>cucumberFramwork</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  <build>
+    <pluginManagement>
+  
+  
+   
+  
+    </pluginManagement>
+  </build>
   <dependencies>
+  
   <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
     <groupId>org.testng</groupId>
@@ -179,21 +188,6 @@
 </dependency>
 
   </dependencies>
-  <build>
-  <plugins>
-    
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.5.2</version>
-        <configuration>
-          <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
-          </suiteXmlFiles>
-        </configuration>
-      </plugin>
-    
-</plugins>
-  </build>
+  
   
 </project>
