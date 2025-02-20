@@ -119,7 +119,11 @@
     <artifactId>cucumber-testng</artifactId>
     <version>7.21.1</version>
 </dependency>
-
+<dependency>
+ <groupId>org.seleniumhq.selenium</groupId>
+ <artifactId>selenium-devtools-v128</artifactId>
+ <version>4.24.0</version>
+</dependency>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>

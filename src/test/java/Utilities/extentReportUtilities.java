@@ -11,6 +11,7 @@ import java.util.List;
 import org.apache.commons.mail.DefaultAuthenticator;
 import org.apache.commons.mail.ImageHtmlEmail;
 import org.apache.commons.mail.resolver.DataSourceUrlResolver;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -25,6 +26,7 @@ public class extentReportUtilities implements ITestListener {
 	public ExtentReports extent;
 	public ExtentTest test;
 	String repName;
+	
 	public void onStart(ITestContext testContext) {
 	/*SimpleDateFormat df=new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
 	Date dt=new Date();
@@ -75,6 +77,7 @@ public class extentReportUtilities implements ITestListener {
 		}
 	
 	public void onFinish (ITestContext testContext) {
+		
 		extent.flush();
 		String pathOfExtentReport = System.getProperty("user.dir")+"\\target\\"+"htmlreport.html";
 		File extentReport = new File(pathOfExtentReport);
