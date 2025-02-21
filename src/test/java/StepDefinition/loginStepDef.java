@@ -125,6 +125,6 @@ public class loginStepDef {
 	@And("checking success message")
 	public void checking_success_message() {
 	   
-	   Assert.assertTrue( true);
+	   Assert.assertTrue( hp.checkSuccess());
 	}
 }

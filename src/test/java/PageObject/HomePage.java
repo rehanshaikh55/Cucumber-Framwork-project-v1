@@ -25,7 +25,7 @@ public class HomePage {
      @FindBy(xpath="//div[@class='oxd-grid-item oxd-grid-item--gutters user-password-cell']//div[@class='oxd-input-group oxd-input-field-bottom-space']//div//input[@type='password']")WebElement inputPwd;
      @FindBy(xpath="//div[@class='oxd-grid-item oxd-grid-item--gutters']//div[@class='oxd-input-group oxd-input-field-bottom-space']//div//input[@type='password']")WebElement inpuConfirmPwd;
      @FindBy(xpath="//button[normalize-space()='Save']") WebElement saveBtn; 
-     @FindBy(xpath="//div[contains(@id,'oxd-toaster')]") WebElement successDiv;
+     @FindBy(xpath="//p[contains(text(),'Success']") WebElement successDiv;
      
 public void clickProfile() {
 	profileIcon.click();
